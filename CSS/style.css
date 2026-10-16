@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Blinker', sans-serif;
+}
+
+body {
+    background-color: #05050d;
+    color: white;
+}
+
+/* --- HEADER --- */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #05050d;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+    color: #8A2BE2;
+    border-bottom: 3px solid #8A2BE2;
+}
+
+.header-direita {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.busca {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.busca i {
+    position: absolute;
+    left: 10px;
+    color: #888;
+}
+
+.busca input {
+    padding: 8px 10px 8px 32px;
+    border-radius: 20px;
+    border: none;
+    background-color: #1a1a2e;
+    color: white;
+    outline: none;
+}
+
+.icones-usuario {
+    display: flex;
+    gap: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+.icones-usuario i {
+    cursor: pointer;
+}
+
+.icones-usuario i:hover {
+    color: #8A2BE2;
+}
+
+/* --- SEÇÃO HERO --- */
+.hero {
+    width: 100%;
+    min-height: 80vh;
+    background: linear-gradient(to top, rgba(5, 5, 13, 0.9), rgba(5, 5, 13, 0.4)), url('../IMG/fundo.png');
+    background-position: center;
+    background-size: cover;
+    padding: 60px 40px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conteudo-hero {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.p-hero-comeco {
+    color: #a29bfe;
+    font-size: 16px;
+}
+
+.h2-hero-centro {
+    color: white;
+    font-size: 55px;
+    font-weight: 800;
+}
+
+.h2-hero-centro span {
+    color: #8A2BE2;
+}
+
+.p-hero-fim {
+    color: #d1d1d1;
+    font-size: 16px;
+}
+
+.btn-comprar {
+    background-color: #8A2BE2;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-comprar:hover {
+    background-color: #7020c4;
+}
+
+.destaques-hero {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.destaque {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #d1d1d1;
+    font-size: 14px;
+}
+
+.destaque i {
+    color: #8A2BE2;
+    font-size: 20px;
+}
+
+/* --- PRÓXIMOS EVENTOS --- */
+.proximos-eventos {
+    padding: 40px;
+}
+
+.superior-eventos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.superior-eventos h2 {
+    color: white;
+    border-left: 5px solid #8A2BE2;
+    padding-left: 10px;
+    font-size: 28px;
+}
+
+.superior-eventos p {
+    color: #8A2BE2;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.evento {
+    background-color: #0d0d1a;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    flex: 1;
+    min-width: 220px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.imagem-evento {
+    position: relative;
+}
+
+.imagem-evento img {
+    width: 100%;
+    height: 160px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.show {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #8A2BE2;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.evento h2 {
+    font-size: 16px;
+    color: white;
+    margin-top: 5px;
+}
+
+.evento p {
+    color: #a0a0a0;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.evento p i {
+    color: #8A2BE2;
+}
+
+.btn-comprar-ingresso {
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-comprar-ingresso:hover {
+    background-color: #7020c4;
+}
+
+/* --- BANNER EXPERIÊNCIA --- */
+.banner-experiencia {
+    background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.4)), url('../IMG/estudio.webp');
+    background-size: cover;
+    margin: 40px;
+    padding: 30px 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo-banner p {
+    color: #a29bfe;
+    font-size: 14px;
+}
+
+.conteudo-banner h2 {
+    font-size: 26px;
+    color: white;
+}
+
+.btn-conheca {
+    background-color: transparent;
+    border: 1px solid #8A2BE2;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-conheca:hover {
+    background-color: #8A2BE2;
+}
+
+/* --- BENEFÍCIOS --- */
+.beneficios {
+    padding: 20px 40px 50px 40px;
+}
+
+.cards-beneficios {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.beneficio {
+    flex: 1;
+    min-width: 180px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    padding-left: 20px;
+}
+
+.beneficio i {
+    font-size: 28px;
+    color: #8A2BE2;
+    margin-bottom: 10px;
+}
+
+.beneficio h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.beneficio p {
+    color: #a0a0a0;
+    font-size: 13px;
+}
+
+/* --- FOOTER / RODAPÉ --- */
+footer {
+    background-color: #030308;
+    padding: 30px 40px 15px 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-info nav a {
+    color: #a0a0a0;
+    font-size: 14px;
+    border: none;
+    padding: 0 10px;
+}
+
+.footer-info nav a:hover {
+    color: white;
+}
+
+.footer-direita {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-direita i {
+    color: #a0a0a0;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.footer-direita i:hover {
+    color: #8A2BE2;
+}
+
+.footer-inferior {
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 15px;
+}
