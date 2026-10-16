@@ -261,7 +261,7 @@ nav a:hover {
 
 /* --- BANNER EXPERIÊNCIA --- */
 .banner-experiencia {
-    background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.4)), url('../IMG/estudio.webp');
+    background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.4)), url('../IMG/fundo2.png');
     background-size: cover;
     margin: 40px;
     padding: 30px 40px;
